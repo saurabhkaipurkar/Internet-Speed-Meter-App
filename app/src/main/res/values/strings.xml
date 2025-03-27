@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Internet Speed Meter App</string>
+    <string name="speed_text">↓ 0 KB/s | ↑ 0 KB/s</string>
+    <string name="toggle_switch">Switch ON / OFF</string>
+    <string name="on_off">ON / OFF</string>
+    <string name="type">Type</string>
+    <string name="usage">Usage</string>
+    <string name="data_0_kb">Data: 0 KB</string>
+    <string name="network_unknown">Network: Unknown</string>
+    <string name="internet_speed_widget">Internet Speed Widget</string>
+    <string name="network_type_description">Displays the current network type</string>
+    <string name="data_usage_description">Shows the current data usage</string>
+    <string name="speed_text_description">Shows the current network speed</string>
+    <string name="network_speed">Network Speed</string>
+    <string name="wifi_usage">Wifi Usage</string>
+    <string name="ad_s_here">AD\'s Here</string>
+</resources>
