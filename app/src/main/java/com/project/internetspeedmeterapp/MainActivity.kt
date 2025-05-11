@@ -1,4 +1,4 @@
-package com.example.internetspeedmeterapp
+package com.project.internetspeedmeterapp
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -15,9 +15,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.internetspeedmeterapp.adapters.DataUsageAdapter
-import com.example.internetspeedmeterapp.databinding.ActivityMainBinding
-import com.example.internetspeedmeterapp.datahandler.DataUsageHandler
+import com.project.internetspeedmeterapp.adapters.DataUsageAdapter
+import com.project.internetspeedmeterapp.databinding.ActivityMainBinding
+import com.project.internetspeedmeterapp.datahandler.DataUsageHandler
 import java.util.Locale
 import androidx.core.net.toUri
 import androidx.core.view.ViewCompat

@@ -1,4 +1,4 @@
-package com.example.internetspeedmeterapp.widgets
+package com.project.internetspeedmeterapp.widgets
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -10,12 +10,12 @@ import android.net.TrafficStats
 import android.os.Handler
 import android.os.Looper
 import android.widget.RemoteViews
-import com.example.internetspeedmeterapp.MainActivity
-import com.example.internetspeedmeterapp.R
-import com.example.internetspeedmeterapp.util.NetworkMonitor
+import com.project.internetspeedmeterapp.MainActivity
+import com.project.internetspeedmeterapp.R
+import com.project.internetspeedmeterapp.util.NetworkMonitor
 import java.text.DecimalFormat
 import androidx.core.content.edit
-import com.example.internetspeedmeterapp.util.SpeedCalculator
+import com.project.internetspeedmeterapp.util.SpeedCalculator
 
 class WidgetProvider : AppWidgetProvider() {
 

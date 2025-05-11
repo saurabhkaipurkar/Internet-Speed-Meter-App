@@ -1,4 +1,4 @@
-package com.example.internetspeedmeterapp.util
+package com.project.internetspeedmeterapp.util
 
 import android.annotation.SuppressLint
 import android.content.Context

@@ -1,4 +1,4 @@
-package com.example.internetspeedmeterapp.util
+package com.project.internetspeedmeterapp.util
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -6,7 +6,7 @@ import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
 import androidx.core.app.NotificationCompat
-import com.example.internetspeedmeterapp.R
+import com.project.internetspeedmeterapp.R
 
 object NotificationHelper {
     private const val CHANNEL_ID = "speed_meter_channel"

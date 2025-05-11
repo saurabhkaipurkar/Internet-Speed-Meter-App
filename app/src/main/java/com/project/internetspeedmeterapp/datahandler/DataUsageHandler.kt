@@ -1,4 +1,4 @@
-package com.example.internetspeedmeterapp.datahandler
+package com.project.internetspeedmeterapp.datahandler
 
 data class DataUsageHandler(
     val type: String,

@@ -1,4 +1,4 @@
-package com.example.internetspeedmeterapp
+package com.project.internetspeedmeterapp
 
 import android.annotation.SuppressLint
 import android.app.Service
@@ -12,9 +12,9 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.TextView
 import android.widget.Toast
-import com.example.internetspeedmeterapp.util.NotificationHelper
-import com.example.internetspeedmeterapp.util.SpeedCalculator
-import com.example.internetspeedmeterapp.util.WindowManagerHelper
+import com.project.internetspeedmeterapp.util.NotificationHelper
+import com.project.internetspeedmeterapp.util.SpeedCalculator
+import com.project.internetspeedmeterapp.util.WindowManagerHelper
 
 class SpeedService : Service() {
 

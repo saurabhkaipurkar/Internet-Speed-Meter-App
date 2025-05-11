@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.internetspeedmeterapp"
+    namespace = "com.project.internetspeedmeterapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.internetspeedmeterapp"
+        applicationId = "com.project.internetspeedmeterapp"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.example.internetspeedmeterapp.util
+package com.project.internetspeedmeterapp.util
 
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
@@ -8,8 +8,8 @@ import android.net.Network
 import android.net.NetworkCapabilities
 import android.net.NetworkRequest
 import android.widget.RemoteViews
-import com.example.internetspeedmeterapp.R
-import com.example.internetspeedmeterapp.widgets.WidgetProvider
+import com.project.internetspeedmeterapp.R
+import com.project.internetspeedmeterapp.widgets.WidgetProvider
 
 class NetworkMonitor(private val context: Context) {
 

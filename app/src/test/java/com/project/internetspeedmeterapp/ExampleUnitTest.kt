@@ -1,4 +1,4 @@
-package com.example.internetspeedmeterapp
+package com.project.internetspeedmeterapp
 
 import org.junit.Test
 

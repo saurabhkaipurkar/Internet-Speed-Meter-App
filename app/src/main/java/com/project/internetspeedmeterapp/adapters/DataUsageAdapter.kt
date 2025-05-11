@@ -1,12 +1,12 @@
-package com.example.internetspeedmeterapp.adapters
+package com.project.internetspeedmeterapp.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.internetspeedmeterapp.R
-import com.example.internetspeedmeterapp.datahandler.DataUsageHandler
+import com.project.internetspeedmeterapp.R
+import com.project.internetspeedmeterapp.datahandler.DataUsageHandler
 
 class DataUsageAdapter(private val dataUsageList: List<DataUsageHandler>) :
     RecyclerView.Adapter<DataUsageAdapter.DataUsageViewHolder>() {
