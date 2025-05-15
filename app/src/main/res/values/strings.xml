@@ -14,4 +14,5 @@
     <string name="network_speed">Network Speed</string>
     <string name="wifi_usage">Wifi Usage</string>
     <string name="ad_s_here">AD\'s Here</string>
+    <string name="speed_icon">speed_icon</string>
 </resources>

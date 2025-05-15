@@ -13,4 +13,5 @@
     <color name="contrast_white">#FFFFFF</color>
     <color name="contrast_black">#000000</color>
     <color name="purple">#800080</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

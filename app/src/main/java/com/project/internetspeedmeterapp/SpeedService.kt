@@ -8,10 +8,12 @@ import android.os.IBinder
 import android.os.Looper
 import android.provider.Settings
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.WindowManager
 import android.widget.TextView
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import com.project.internetspeedmeterapp.util.NotificationHelper
 import com.project.internetspeedmeterapp.util.SpeedCalculator
 import com.project.internetspeedmeterapp.util.WindowManagerHelper
@@ -44,11 +46,32 @@ class SpeedService : Service() {
         initializeFloatingView()
     }
 
-    @SuppressLint("InflateParams")
+    @SuppressLint("InflateParams", "ClickableViewAccessibility")
     private fun initializeFloatingView() {
         windowManager = getSystemService(WINDOW_SERVICE) as WindowManager
-        floatingView = LayoutInflater.from(this).inflate(R.layout.floating_speed_view, null).also {
+
+        // Wrap service context with a theme (replace 'R.style.AppTheme' with your actual app theme)
+        val themedContext = android.view.ContextThemeWrapper(this, R.style.Theme_InternetSpeedMeterApp)
+
+        floatingView = LayoutInflater.from(themedContext).inflate(R.layout.floating_speed_view, null).also {
             speedTextView = it.findViewById(R.id.speedTextView)
+
+            // Add this block to animate the card view on touch
+            val cardView = it.findViewById<CardView>(R.id.on_click_card)
+            cardView.setOnTouchListener { v, event ->
+                when (event.action) {
+                    MotionEvent.ACTION_DOWN -> {
+                        v.animate().scaleX(0.97f).scaleY(0.97f).setDuration(100).start()
+                    }
+                    MotionEvent.ACTION_UP -> {
+                        v.animate().scaleX(1f).scaleY(1f).setDuration(100).start()
+                    }
+                    MotionEvent.ACTION_CANCEL -> {
+                        v.animate().scaleX(1f).scaleY(1f).setDuration(100).start()
+                    }
+                }
+                true
+            }
         }
 
         if (WindowManagerHelper.canCreateOverlay()) {

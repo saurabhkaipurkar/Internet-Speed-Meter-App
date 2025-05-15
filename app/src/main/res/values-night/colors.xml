@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#BB86FC</color> <!-- Light purple for accents -->
+    <color name="purple_500">#985EFF</color> <!-- Primary accent -->
+    <color name="purple_700">#3700B3</color> <!-- Darker purple for pressed states -->
+    <color name="teal_200">#03DAC5</color> <!-- Accent color -->
+    <color name="teal_700">#018786</color> <!-- Darker teal for contrast -->
+    <color name="black">#FF121212</color> <!-- Typical dark theme background -->
+    <color name="white">#FFFFFFFF</color> <!-- Still used for icons or highlighted text -->
+    <color name="blue">#82B1FF</color> <!-- Lighter blue for better visibility on dark -->
+    <color name="grey">#B0B0B0</color> <!-- Light grey for text/secondary elements -->
+    <color name="teal_dark">#009688</color> <!-- Refined teal shade -->
+    <color name="contrast_white">#FFFFFF</color> <!-- For text on dark backgrounds -->
+    <color name="contrast_black">#000000</color> <!-- Rarely used in dark theme -->
+    <color name="purple">#CF94DA</color> <!-- Softer purple for light on dark use -->
+    <color name="transparent">#00000000</color>
+</resources>

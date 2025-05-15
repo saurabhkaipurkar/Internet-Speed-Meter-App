@@ -1,21 +1,52 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="12dp"
-    android:id="@+id/main"
-    android:background="@drawable/gradient_bg">
+    android:background="@drawable/gradient_bg"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/dataUsageRecyclerView"
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/headerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WiFi Usage Overview"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Animated RecyclerView inside a CardView for elevation -->
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.5"
-        android:background="@drawable/card_bg"
-        android:clipToPadding="false"
-        android:contentDescription="@string/wifi_usage"
-        android:overScrollMode="never"
-        android:padding="8dp" />
-</LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:background="@android:color/transparent">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dataUsageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="12dp"
+            android:overScrollMode="never"
+            android:contentDescription="@string/wifi_usage"
+            android:scrollbars="vertical" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Footer / Hint -->
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scroll to view more apps"
+        android:textSize="14sp"
+        android:textColor="#B0BEC5"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>

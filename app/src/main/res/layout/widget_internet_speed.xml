@@ -1,50 +1,60 @@
-<FrameLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget_root_layout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/contrast_white"
-    android:id="@+id/widget_root_layout">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/white">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="vertical"
-        android:padding="12dp">
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/widget_gradient_bg"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/widget_network_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/network_check"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/network_type_description"
+            app:tint="@android:color/black" />
 
         <TextView
             android:id="@+id/widget_network_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="@string/network_unknown"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textSize="20sp"
-            android:textColor="@color/purple_700"
-            android:contentDescription="@string/network_type_description" />
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/widget_data_usage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:gravity="center"
+            android:layout_marginTop="4dp"
             android:text="@string/data_0_kb"
-            android:textSize="20sp"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@color/purple_700"
-            android:contentDescription="@string/data_usage_description" />
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/widget_speed_text"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:gravity="center"
-            android:text=""
-            android:textSize="17sp"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/purple_700"
-            android:contentDescription="@string/speed_text_description" />
+            android:layout_marginTop="6dp"
+            android:text="Speed: 0 kbps"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
     </LinearLayout>
-</FrameLayout>
+</androidx.cardview.widget.CardView>

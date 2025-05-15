@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/on_click_card"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_margin="12dp"
     app:cardCornerRadius="24dp"
-    app:cardElevation="8dp"
-    android:id="@+id/on_click_card">
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="13dp"
-        android:background="@color/white"
-        android:gravity="center">
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_gradient_bg"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/speedIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/speedometer"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/speed_icon"
+            app:tint="@android:color/white" />
 
         <TextView
             android:id="@+id/speedTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/speed_text"
-            android:textColor="@color/purple_700"
-            android:textSize="16sp"
-            android:textStyle="bold"/>
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:fontFamily="sans-serif-medium"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
