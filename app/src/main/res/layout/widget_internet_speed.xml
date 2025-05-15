@@ -1,12 +1,9 @@
-<androidx.cardview.widget.CardView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/widget_root_layout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="6dp"
     app:cardBackgroundColor="@android:color/white">
 
     <LinearLayout
@@ -57,4 +54,4 @@
             android:textColor="@android:color/white"
             android:gravity="center"/>
     </LinearLayout>
-</androidx.cardview.widget.CardView>
+</LinearLayout>
